@@ -159,7 +159,10 @@ h1.hero-heading em{color:var(--clay);font-style:normal}
 .btn-secondary{height:52px;padding:0 28px;border-radius:26px;border:1px solid rgba(184,203,191,.2);color:rgba(255,255,255,.6);font-family:'Syne',sans-serif;font-weight:600;font-size:13px;letter-spacing:.04em;background:transparent;cursor:pointer;transition:all .2s}
 .btn-secondary:hover{border-color:rgba(184,203,191,.45);color:rgba(255,255,255,.9)}
 .hero-phones{display:flex;align-items:center;justify-content:center;position:relative}
-.hero-phones .phone{transform:rotate(-2deg);transform-origin:bottom center;box-shadow:0 0 0 1px rgba(255,255,255,.03) inset,0 60px 120px rgba(0,0,0,.8),0 12px 40px rgba(0,0,0,.6)}
+.hero-phones .phone:nth-child(1){display:none}
+.hero-phones .phone:nth-child(2){transform:rotate(-2deg);transform-origin:bottom center;box-shadow:0 0 0 1px rgba(255,255,255,.03) inset,0 60px 120px rgba(0,0,0,.8),0 12px 40px rgba(0,0,0,.6)}
+.hero-phones .phone:nth-child(3){display:none}
+.hero-phones .phone:nth-child(4){display:none}
 
 /* MARQUEE STRIP */
 .marquee-strip{background:var(--clay);padding:14px 0;overflow:hidden;white-space:nowrap}
@@ -172,9 +175,9 @@ h1.hero-heading em{color:var(--clay);font-style:normal}
 section{padding:100px 48px;max-width:1200px;margin:0 auto}
 .section-full{padding:100px 0;max-width:none}
 .section-inner{max-width:1200px;margin:0 auto;padding:0 48px}
-.section-eyebrow{font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--clay);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.section-eyebrow{font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--clay);margin-bottom:16px;display:flex;align-items:center;gap:8px}
 .section-eyebrow::before{content:'';width:20px;height:1px;background:var(--clay)}
-h2.section-heading{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(32px,3.8vw,52px);line-height:1.05;letter-spacing:-.025em;color:var(--white);margin-bottom:20px}
+h2.section-heading{font-family:'Syne',sans-serif;font-weight:700;font-size:clamp(32px,3.8vw,52px);line-height:1.05;letter-spacing:-.025em;color:var(--white);margin-bottom:20px}
 h2.section-heading em{color:var(--clay);font-style:normal}
 .section-body{font-size:17px;color:rgba(255,255,255,.5);font-weight:300;line-height:1.7;max-width:560px}
 
@@ -190,13 +193,13 @@ h2.section-heading em{color:var(--clay);font-style:normal}
 .tag.ok{background:rgba(184,203,191,.08);color:rgba(184,203,191,.6)}
 
 /* FEATURES SECTION */
-.features-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:24px;overflow:hidden;margin-top:56px}
-.feature-card{padding:40px 36px;background:var(--void);transition:background .25s}
-.feature-card:hover{background:rgba(255,255,255,.02)}
+.features-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:rgba(255,255,255,.04);border:1px solid rgba(184,203,191,.08);border-radius:24px;overflow:hidden;margin-top:56px}
+.feature-card{padding:44px 40px;background:rgba(255,255,255,.02);transition:background .25s}
+.feature-card:hover{background:rgba(255,255,255,.03)}
 .feature-icon{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
 .feature-icon.clay{background:rgba(232,134,106,.12);border:1px solid rgba(232,134,106,.2)}
 .feature-icon.sage{background:rgba(184,203,191,.08);border:1px solid rgba(184,203,191,.15)}
-.feature-title{font-family:'Syne',sans-serif;font-weight:700;font-size:18px;color:var(--white);margin-bottom:10px;letter-spacing:-.01em}
+.feature-title{font-family:'Syne',sans-serif;font-weight:600;font-size:18px;color:var(--white);margin-bottom:10px;letter-spacing:-.01em}
 .feature-body{font-size:14px;color:rgba(255,255,255,.45);line-height:1.65;font-weight:300}
 .feature-tag{display:inline-block;font-family:'Syne',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:6px;background:rgba(232,134,106,.1);color:var(--clay);margin-top:14px}
 
@@ -213,7 +216,7 @@ h2.section-heading em{color:var(--clay);font-style:normal}
 .data-badges{display:flex;flex-direction:column;gap:12px;margin-top:32px}
 .data-badge{display:flex;align-items:center;gap:16px;padding:16px 20px;border-radius:14px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07)}
 .data-badge-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:rgba(184,203,191,.07);border:1px solid rgba(184,203,191,.12)}
-.data-badge-text strong{display:block;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;color:rgba(255,255,255,.85);margin-bottom:2px}
+.data-badge-text strong{display:block;font-family:'Syne',sans-serif;font-size:12px;font-weight:600;color:rgba(255,255,255,.85);margin-bottom:2px}
 .data-badge-text span{font-size:11.5px;color:rgba(255,255,255,.38);font-weight:300}
 
 /* SAFETY SECTION */
@@ -294,7 +297,7 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
 .s2-path-svg{position:absolute;inset:0;width:100%;height:100%}
 .s2-pill{position:absolute;bottom:24px;left:20px;right:20px;background:rgba(28,43,58,.92);backdrop-filter:blur(12px);border:1px solid rgba(184,203,191,.15);border-radius:20px;padding:18px 20px}
 .s2-pill-label{font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#E8866A;margin-bottom:4px}
-.s2-pill-title{font-family:'Syne',sans-serif;font-weight:700;font-size:19px;color:#FFFFFF;letter-spacing:-.02em;margin-bottom:4px}
+.s2-pill-title{font-family:'Syne',sans-serif;font-weight:600;font-size:19px;color:#FFFFFF;letter-spacing:-.02em;margin-bottom:4px}
 .s2-pill-body{font-size:12px;color:#B8CBBF;font-weight:300;line-height:1.5;opacity:.9}
 .s2-bottom{padding:16px 24px 24px;flex-shrink:0}
 .dots{display:flex;gap:6px;justify-content:center;margin-bottom:16px}
@@ -308,7 +311,7 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
 .s3{background:#141F2A}
 .s3-header{padding:8px 20px 16px;flex-shrink:0}
 .s3-label{font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#E8866A;margin-bottom:4px}
-.s3-title{font-family:'Syne',sans-serif;font-weight:700;font-size:22px;color:#FFFFFF;letter-spacing:-.02em;line-height:1.2}
+.s3-title{font-family:'Syne',sans-serif;font-weight:600;font-size:22px;color:#FFFFFF;letter-spacing:-.02em;line-height:1.2}
 .s3-map{flex:1;position:relative;overflow:hidden;background:#0F1920}
 .s3-map-bg-grid{position:absolute;inset:0;opacity:.04;background-image:linear-gradient(rgba(184,203,191,1) 1px,transparent 1px),linear-gradient(90deg,rgba(184,203,191,1) 1px,transparent 1px);background-size:18px 18px}
 .s3-overlay{position:absolute;bottom:0;left:0;right:0;padding:12px 16px 16px;background:linear-gradient(to top,rgba(20,31,42,1) 0%,rgba(20,31,42,.9) 60%,transparent 100%)}
@@ -335,7 +338,7 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
 .s4-compass{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
 .s4-content{flex:1;padding:8px 24px 0}
 .s4-label{font-family:'Syne',sans-serif;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#E8866A;margin-bottom:6px}
-.s4-title{font-family:'Syne',sans-serif;font-weight:700;font-size:24px;color:#FFFFFF;letter-spacing:-.02em;line-height:1.2;margin-bottom:8px}
+.s4-title{font-family:'Syne',sans-serif;font-weight:600;font-size:24px;color:#FFFFFF;letter-spacing:-.02em;line-height:1.2;margin-bottom:8px}
 .s4-body{font-size:13px;color:#B8CBBF;font-weight:300;line-height:1.6;margin-bottom:20px;opacity:.85}
 .perm-row{display:flex;align-items:center;gap:14px;padding:13px 16px;background:rgba(184,203,191,.15);border:1px solid rgba(184,203,191,.12);border-radius:14px;margin-bottom:8px}
 .perm-icon{width:36px;height:36px;border-radius:10px;background:rgba(232,134,106,.15);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
@@ -367,7 +370,7 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
   <div class="hero-inner">
     <div class="hero-text">
       <div class="hero-eyebrow">Now in development</div>
-      <h1 class="hero-heading">The countryside<br><em>is yours.</em></h1>
+      <h1 class="hero-heading">Walk the paths<br><em>Google Maps forgot.</em></h1>
       <p class="hero-sub">Roam is the UK's first walking app that combines <b>authoritative OS footpath data</b> with real <b>turn-by-turn navigation</b>. Plan any route on any public right of way — and be guided along it.</p>
       <div class="hero-actions">
         <button class="btn-primary" onclick="document.getElementById('beta').scrollIntoView({behavior:'smooth'})">
@@ -379,7 +382,45 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
     </div>
     <div class="hero-phones">
 <!-- ── SCREEN 1: SPLASH ─────────────────── -->
-<!-- ── SCREEN 2: ROUTE DRAWING ──────────── -->
+<div class="phone"><div class="screen s1">
+  <div class="s1-bg">
+    <svg viewBox="0 0 270 585" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="135" cy="320" rx="220" ry="160" fill="none" stroke="#B8CBBF" stroke-width="1"/>
+      <ellipse cx="135" cy="320" rx="185" ry="130" fill="none" stroke="#B8CBBF" stroke-width="1"/>
+      <ellipse cx="135" cy="320" rx="150" ry="100" fill="none" stroke="#B8CBBF" stroke-width="1"/>
+      <ellipse cx="135" cy="320" rx="115" ry="72" fill="none" stroke="#B8CBBF" stroke-width="1"/>
+      <ellipse cx="135" cy="320" rx="80" ry="46" fill="none" stroke="#B8CBBF" stroke-width="1"/>
+      <ellipse cx="135" cy="320" rx="48" ry="24" fill="none" stroke="#B8CBBF" stroke-width="1"/>
+    </svg>
+    <div class="s1-gradient"></div>
+  </div>
+  <svg class="s1-terrain" viewBox="0 0 270 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 140 L0 90 Q20 85 40 70 Q55 58 70 65 Q85 72 100 50 Q115 28 130 35 Q145 42 160 55 Q175 68 190 45 Q205 22 220 30 Q240 38 270 60 L270 140 Z" fill="rgba(232,134,106,0.08)"/>
+    <path d="M0 140 L0 105 Q30 100 55 85 Q75 74 95 80 Q115 86 135 68 Q155 50 175 60 Q195 70 215 55 Q235 40 270 75 L270 140 Z" fill="rgba(232,134,106,0.06)"/>
+    <path d="M0 140 L0 120 Q40 115 80 100 Q110 90 140 95 Q170 100 200 85 Q230 70 270 95 L270 140 Z" fill="rgba(28,43,58,0.8)"/>
+  </svg>
+  <div class="status-bar">
+    <span class="time">9:41</span>
+    <div class="status-icons"><span>●●●</span><span>WiFi</span><span>🔋</span></div>
+  </div>
+  <div class="s1-content">
+    <div class="logo-mark">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="32" r="30" stroke="#E8866A" stroke-width="2" opacity="0.3"/>
+        <circle cx="32" cy="32" r="22" stroke="#E8866A" stroke-width="1.5" opacity="0.5"/>
+        <path d="M16 44 Q24 36 32 28 Q40 20 48 28" stroke="#E8866A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <circle cx="16" cy="44" r="3.5" fill="#E8866A"/>
+        <circle cx="32" cy="28" r="3.5" fill="#B8CBBF"/>
+        <circle cx="48" cy="28" r="3.5" stroke="#E8866A" stroke-width="2" fill="none"/>
+      </svg>
+    </div>
+    <div class="s1-wordmark">Roam</div>
+    <div class="s1-tagline">The countryside is yours.</div>
+    <div class="s1-btn">Get started</div>
+    <div class="s1-sub">Been here before? Sign in</div>
+  </div>
+</div></div>
+
 <div class="phone"><div class="screen s2">
   <div class="status-bar" style="position:relative;z-index:10;">
     <span class="time" style="color:white;">9:41</span>
@@ -429,6 +470,37 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
     <div class="s2-cta">Continue</div>
   </div>
 </div></div>
+
+<!-- ── SCREEN 3: COMMUNITY REPORTS ──────── -->
+<div class="phone"><div class="screen s3">
+  <div class="status-bar">
+    <span class="time">9:41</span>
+    <div class="status-icons"><span>●●●</span></div>
+  </div>
+  <div class="s3-header">
+    <div class="s3-label">Community</div>
+    <div class="s3-title">Know before<br>you go</div>
+  </div>
+  <div class="s3-map">
+    <div class="s3-map-bg-grid"></div>
+  </div>
+</div></div>
+
+<!-- ── SCREEN 4: PERMISSIONS ─────────────── -->
+<div class="phone"><div class="screen s4">
+  <div class="status-bar">
+    <span class="time">9:41</span>
+    <div class="status-icons"><span>●●●</span></div>
+  </div>
+  <div class="s4-top-art">
+    <div class="s4-art-bg"></div>
+  </div>
+  <div class="s4-content">
+    <div class="s4-label">Almost there</div>
+    <div class="s4-title">Ready to roam</div>
+  </div>
+</div></div>
+
     </div>
   </div>
 </section>
@@ -436,20 +508,22 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
 <!-- MARQUEE -->
 <div class="marquee-strip" aria-hidden="true">
   <div class="marquee-inner">
-    <span>OS OpenData</span><span class="sep">·</span>
-    <span>Public Rights of Way</span><span class="sep">·</span>
-    <span>Turn-by-Turn Navigation</span><span class="sep">·</span>
-    <span>Community Reporting</span><span class="sep">·</span>
-    <span>Off-Route Alerts</span><span class="sep">·</span>
-    <span>220,000km of Footpaths</span><span class="sep">·</span>
-    <span>Walk, Cycle, Run</span><span class="sep">·</span>
-    <span>OS OpenData</span><span class="sep">·</span>
-    <span>Public Rights of Way</span><span class="sep">·</span>
-    <span>Turn-by-Turn Navigation</span><span class="sep">·</span>
-    <span>Community Reporting</span><span class="sep">·</span>
-    <span>Off-Route Alerts</span><span class="sep">·</span>
-    <span>220,000km of Footpaths</span><span class="sep">·</span>
-    <span>Walk, Cycle, Run</span><span class="sep">·</span>
+    <span>220,000km of footpaths</span><span class="sep">·</span>
+    <span>Paths Google Maps doesn't show</span><span class="sep">·</span>
+    <span>Turn-by-turn on any right of way</span><span class="sep">·</span>
+    <span>Built on OS OpenData</span><span class="sep">·</span>
+    <span>Community conditions reports</span><span class="sep">·</span>
+    <span>Off-route alerts</span><span class="sep">·</span>
+    <span>England & Wales PROW network</span><span class="sep">·</span>
+    <span>No crowdsourced edits</span><span class="sep">·</span>
+    <span>220,000km of footpaths</span><span class="sep">·</span>
+    <span>Paths Google Maps doesn't show</span><span class="sep">·</span>
+    <span>Turn-by-turn on any right of way</span><span class="sep">·</span>
+    <span>Built on OS OpenData</span><span class="sep">·</span>
+    <span>Community conditions reports</span><span class="sep">·</span>
+    <span>Off-route alerts</span><span class="sep">·</span>
+    <span>England & Wales PROW network</span><span class="sep">·</span>
+    <span>No crowdsourced edits</span><span class="sep">·</span>
   </div>
 </div>
 
@@ -501,41 +575,37 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
 
 <!-- FEATURES -->
 <section id="features" style="padding-bottom:0">
-  <div class="section-eyebrow reveal">What Roam does</div>
+  <div class="section-eyebrow reveal">THE APP</div>
   <h2 class="section-heading reveal reveal-delay-1">Built for how you<br>actually walk.</h2>
-  <p class="section-body reveal reveal-delay-2">Not trails. Not pins. Not a community forum with a map bolted on. Roam is a navigation tool — the thing the walking world has been waiting for.</p>
+  <p class="section-body reveal reveal-delay-2">Not a trail discovery app. Not a sports tracker. Roam is a navigation tool — the first one built specifically for the UK's footpath and bridleway network.</p>
   <div class="features-grid">
     <div class="feature-card reveal">
       <div class="feature-icon clay">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M3 19 C5 14 7 12 9 10 C11 8 11 6 11 4" stroke="#E8866A" stroke-width="1.8" stroke-linecap="round"/><path d="M11 4 L14 8 L19 7" stroke="#E8866A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 8 L13 12 L16 17" stroke="#E8866A" stroke-width="1.8" stroke-linecap="round"/><circle cx="3" cy="19" r="1.5" fill="#E8866A"/></svg>
       </div>
-      <div class="feature-title">Draw your own route</div>
-      <div class="feature-body">Trace any path on the map and Roam snaps it to the nearest public right of way. Point-to-point or loop. Plan on your phone or desktop — your route syncs instantly.</div>
-      <span class="feature-tag">Route planning</span>
+      <div class="feature-title">Walk paths Google Maps doesn't know exist</div>
+      <div class="feature-body">Roam is built on the government's definitive record of public rights of way — 220,000km of footpaths, bridleways and restricted byways that don't appear on Google Maps, Waze, or any commercial mapping app.</div>
     </div>
     <div class="feature-card reveal reveal-delay-1">
       <div class="feature-icon clay">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><polygon points="11,3 19,18 11,14 3,18" fill="none" stroke="#E8866A" stroke-width="1.8" stroke-linejoin="round"/></svg>
       </div>
-      <div class="feature-title">Turn-by-turn navigation</div>
-      <div class="feature-body">Voice-guided directions at every junction, stile, and gate. The same experience as driving with Google Maps — applied to footpaths. Fully offline once downloaded.</div>
-      <span class="feature-tag">Wayfinding</span>
+      <div class="feature-title">Know exactly where to turn</div>
+      <div class="feature-body">Step-by-step directions on any public right of way. Roam tells you when to turn, how far to the next waypoint, and alerts you the moment you leave the path.</div>
     </div>
     <div class="feature-card reveal reveal-delay-1">
       <div class="feature-icon sage">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="#B8CBBF" stroke-width="1.6" fill="none"/><circle cx="11" cy="11" r="3" fill="#B8CBBF"/><path d="M11 3V5M11 17V19M3 11H5M17 11H19" stroke="#B8CBBF" stroke-width="1.4" stroke-linecap="round"/></svg>
       </div>
-      <div class="feature-title">Live community conditions</div>
-      <div class="feature-body">See what's ahead before you get there — cattle in the field, flooded stiles, a locked gate, a fallen tree. Report conditions in seconds. Like Waze, but for the countryside.</div>
-      <span class="feature-tag">Community layer</span>
+      <div class="feature-title">Know before you go</div>
+      <div class="feature-body">Walkers report what they find — flooded stiles, overgrown paths, livestock in fields. Conditions on your route, from people who walked it this week.</div>
     </div>
     <div class="feature-card reveal reveal-delay-2">
       <div class="feature-icon sage">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2L13.5 8H20L14.5 12L16.5 18.5L11 15L5.5 18.5L7.5 12L2 8H8.5Z" stroke="#B8CBBF" stroke-width="1.6" stroke-linejoin="round" fill="none"/></svg>
       </div>
-      <div class="feature-title">Built on government data</div>
-      <div class="feature-body">Roam uses OS OpenData and Natural England's definitive PROW datasets — the same authoritative source as Ordnance Survey maps, not crowdsourced guesswork. Accuracy you can trust in the field.</div>
-      <span class="feature-tag">OS OpenData</span>
+      <div class="feature-title">Not crowdsourced. Government-grade.</div>
+      <div class="feature-body">OS OpenData, Natural England, and Local Authority definitive maps. The same data that settles legal disputes about where a path runs — not edits from anonymous strangers.</div>
     </div>
   </div>
 </section>
