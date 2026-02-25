@@ -381,7 +381,7 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
     <div class="hero-text">
       <div class="hero-eyebrow">Now in development</div>
       <h1 class="hero-heading">Walk the paths<br><em>Google Maps forgot.</em></h1>
-      <p class="hero-sub">Roam is the UK's first walking app that combines <b>authoritative OS footpath data</b> with real <b>turn-by-turn navigation</b>. Plan any route on any public right of way — and be guided along it.</p>
+      <p class="hero-sub">Built from the ground up for the UK's rights-of-way network.</p>
       <div class="hero-actions">
         <button class="btn-primary" onclick="document.getElementById('beta').scrollIntoView({behavior:'smooth'})">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1L13 7L7 13M1 7H13" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -544,42 +544,43 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
 <section>
   <div class="problem-grid">
     <div>
-      <div class="section-eyebrow reveal">The gap</div>
-      <h2 class="section-heading reveal reveal-delay-1">Great maps.<br>No navigation.<br><em>Until now.</em></h2>
-      <p class="section-body reveal reveal-delay-2">The UK has over 220,000km of public rights of way — one of the world's most extensive footpath networks. But no single app has ever let you plan a route on those paths and actually navigate it, turn by turn. Serious UK walkers routinely use two or three apps together just to get out for a walk. That's not good enough.</p>
+      <div class="section-eyebrow reveal">App comparison</div>
+      <h2 class="section-heading reveal reveal-delay-1">Choose maps built for <em>how you actually walk.</em></h2>
+      <p class="section-body reveal reveal-delay-2">Different apps are designed around different navigation models. Roam is purpose-built for exploring the UK on foot.</p>
     </div>
     <div class="reveal reveal-delay-2">
       <table class="app-table">
         <thead>
           <tr>
             <th>App</th>
-            <th>Map quality</th>
-            <th>Navigation</th>
+            <th>Strengths</th>
+            <th>The Gap</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>OS Maps</td>
-            <td><span class="tag ok">Excellent</span></td>
-            <td><span class="tag miss">No wayfinding</span></td>
+            <td>Excellent UK mapping, route navigation</td>
+            <td>Designed around pre-planned routes, not spontaneous path walking</td>
           </tr>
           <tr>
             <td>AllTrails</td>
-            <td><span class="tag miss">OSM data</span></td>
-            <td><span class="tag ok">Discovery only</span></td>
+            <td>Great trail discovery, community routes</td>
+            <td>Trail-centric — footpaths only navigable if part of a named trail</td>
           </tr>
           <tr>
             <td>Komoot</td>
-            <td><span class="tag miss">Not UK-specific</span></td>
-            <td><span class="tag ok">Good</span></td>
+            <td>Good turn-by-turn, global coverage</td>
+            <td>Not built around UK PROW — routing treats footpaths as secondary</td>
           </tr>
           <tr>
             <td style="color:var(--clay);font-family:'Plus Jakarta Sans',sans-serif;font-weight:700">Roam</td>
-            <td><span class="tag ok" style="background:rgba(232,134,106,.18);color:var(--clay)">OS-grade PROW</span></td>
-            <td><span class="tag ok" style="background:rgba(232,134,106,.18);color:var(--clay)">Turn-by-turn</span></td>
+            <td style="color:var(--clay)">UK PROW-focused mapping</td>
+            <td style="color:var(--clay)">Turn-by-turn on any connected public footpath</td>
           </tr>
         </tbody>
       </table>
+      <p style="font-size:11px;color:rgba(255,255,255,.25);font-weight:300;margin-top:20px;line-height:1.5">Feature descriptions reflect each app's primary navigation approach. Capabilities may vary by route, region, and subscription tier.</p>
     </div>
   </div>
 </section>
@@ -589,7 +590,7 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
 <section id="features" style="padding-bottom:0">
   <div class="section-eyebrow reveal">THE APP</div>
   <h2 class="section-heading reveal reveal-delay-1">Made for people who travel <em>on foot.</em></h2>
-  <p class="section-body reveal reveal-delay-2">Not a trail discovery app. Not a sports tracker. Roam is a navigation tool — the first one built specifically for the UK's footpath and bridleway<br>network.</p>
+  <p class="section-body reveal reveal-delay-2">Trail apps help you follow routes. Roam helps you navigate paths.</p>
   <div class="features-grid">
     <div class="feature-card reveal">
       <div class="feature-icon clay">
@@ -602,15 +603,15 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
       <div class="feature-icon clay">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><polygon points="11,3 19,18 11,14 3,18" fill="none" stroke="#E8866A" stroke-width="1.8" stroke-linejoin="round"/></svg>
       </div>
-      <div class="feature-title">Turn-by-turn navigation</div>
-      <div class="feature-body">Step-by-step directions on any public right of way. Roam tells you when to turn, how far to the next waypoint, and alerts you the moment you leave the path.</div>
+      <div class="feature-title">Guided every step of the way</div>
+      <div class="feature-body">Turn-by-turn directions on any public right of way, on screen and out loud. Roam tells you when to turn, how far to the next waypoint, and alerts you the moment you leave the path.</div>
     </div>
     <div class="feature-card reveal reveal-delay-1">
       <div class="feature-icon sage">
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8" stroke="#B8CBBF" stroke-width="1.6" fill="none"/><circle cx="11" cy="11" r="3" fill="#B8CBBF"/><path d="M11 3V5M11 17V19M3 11H5M17 11H19" stroke="#B8CBBF" stroke-width="1.4" stroke-linecap="round"/></svg>
       </div>
-      <div class="feature-title">Get alerts from the community</div>
-      <div class="feature-body">Walkers report what they find — flooded stiles, overgrown paths, livestock in fields. Conditions on your route, from people who walked it this week.</div>
+      <div class="feature-title">Live community alerts</div>
+      <div class="feature-body">Walkers report what they find — damaged stiles, overgrown paths, livestock in fields. Conditions on your route, from people who walked it.</div>
     </div>
     <div class="feature-card reveal reveal-delay-2">
       <div class="feature-icon sage">
@@ -1245,7 +1246,7 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
     <div>
       <div class="section-eyebrow reveal">Data you can trust</div>
       <h2 class="section-heading reveal reveal-delay-1">Not crowdsourced.<br><em>Government-grade.</em></h2>
-      <p class="section-body reveal reveal-delay-2">Other apps rely on OpenStreetMap — volunteer-maintained data that has been directly linked to UK Mountain Rescue callouts. Roam uses authoritative, legally-maintained datasets. If it's a public right of way, Roam knows about it. If it's not, it won't be suggested to you.</p>
+      <p class="section-body reveal reveal-delay-2">Other apps rely on OpenStreetMap — volunteer-maintained data that has been directly linked to UK Mountain Rescue callouts. Roam uses authoritative, legally-maintained datasets. If it's a public right of way, Roam knows about it. If it's not, it won't be suggested to you. Built on OS OpenData and official rights-of-way records from public bodies — the same sources used to establish legal access.</p>
     </div>
     <div class="data-badges reveal reveal-delay-2">
       <div class="data-badge">
@@ -1294,7 +1295,7 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
   <div class="safety-inner">
     <div>
       <div class="section-eyebrow reveal">Safety</div>
-      <h2 class="section-heading reveal reveal-delay-1">Know where you are.<br><em>Always.</em></h2>
+      <h2 class="section-heading reveal reveal-delay-1">Know where you are.<br><em>Know you're welcome.</em></h2>
       <p class="section-body reveal reveal-delay-2">Roam alerts you the moment you wander off-path. Share your live location with someone who cares. Get emergency services coordinates in one tap. Because being out in the countryside should feel like freedom — not a risk.</p>
     </div>
     <div class="safety-stats reveal reveal-delay-2">
@@ -1307,12 +1308,12 @@ footer{border-top:1px solid rgba(255,255,255,.06);padding:40px 48px;display:flex
         <div class="stat-l">visits to National Trails every year</div>
       </div>
       <div class="stat-card">
-        <div class="stat-n">5m+</div>
-        <div class="stat-l">OS Maps subscribers — proof walkers pay for quality data</div>
+        <div class="stat-n">4</div>
+        <div class="stat-l">Legal path types</div>
       </div>
       <div class="stat-card">
-        <div class="stat-n">0</div>
-        <div class="stat-l">apps that do route planning and navigation well, for the UK. Until now.</div>
+        <div class="stat-n">1</div>
+        <div class="stat-l">Definitive map — the legal record for public rights of way in England & Wales</div>
       </div>
     </div>
   </div>
